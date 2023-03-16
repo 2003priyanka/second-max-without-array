@@ -1,0 +1,28 @@
+//second big (WITHOUT USING ARRAY)
+#include<iostream>
+using namespace std;
+int main()
+{
+	int limit,num,max=0,secondmax=0;
+	cout<<"enter the limit:";
+	cin>>limit;
+	while(limit>0)
+	{
+		cin>>num;
+		
+		if(num>max)
+		{
+			secondmax=max;
+			max=num;
+		}
+		else if(num>secondmax)
+		{
+			secondmax=num;
+		}
+		limit--;
+	}
+	cout<<"max="<<max;
+	cout<<"secondmax="<<secondmax;
+	return 0;
+	
+}
